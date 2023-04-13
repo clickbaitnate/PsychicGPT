@@ -39,7 +39,18 @@
 
 ## Getting Started
 
-First, run the development server:
+Clone
+```
+git clone https://github.com/clickbaitnate/PsychicGPT/
+
+```
+
+Enter Directory
+```
+cd PsychicGPT
+```
+
+Run the development server:
 
 ```bash
 npm run dev
