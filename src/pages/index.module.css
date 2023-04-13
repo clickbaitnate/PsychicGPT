@@ -1,0 +1,19 @@
+/* src/pages/index.module.css */
+
+
+.title {
+    text-align: center;
+  }
+
+  .tarotSpreadContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .darkMode {
+    background-color: #222;
+    color: #fff;
+  }

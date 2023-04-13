@@ -1,0 +1,74 @@
+/* components/TarotCard.module.css */
+
+.cardContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+  
+  .cardImageWrapper {
+    position: relative;
+  }
+  
+  .inverted {
+    transform: rotate(180deg);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cardDescription {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    z-index: 1;
+    color: #333;
+  }
+  
+  .meanings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 2;
+    overflow-y:auto;
+  }
+  
+  .meanings::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .meanings::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .meanings::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+  }
+
+  .cardContainer:hover .meanings {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  

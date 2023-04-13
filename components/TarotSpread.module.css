@@ -1,0 +1,80 @@
+
+
+.tarotSpread {
+    display: flex;
+    flex-wrap: wrap; /* Change this to wrap for better mobile responsiveness */
+    justify-content: center; /* Add this to center the cards on the screen */
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .cardContainer {
+    margin: 1rem;
+    flex: 1 0 300px;
+  }
+
+  @media (min-width: 768px) {
+    .tarotSpread {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      overflow-x: auto;
+    }
+  }
+
+.button {
+    margin: 1rem auto;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #4b7099;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .darkMode {
+    background-color: #222;
+    color: #f0f0f0;
+  }
+  
+  .darkMode .meanings {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+
+  .darkMode .button {
+    background-color: #555;
+  }
+
+  .darkMode.button:hover {
+    background-color: #444;
+  }
+
+  .drawButton {
+    margin: 1rem auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .drawButton:hover {
+    background-color: #3f8c43;
+  }
+  
+  
